@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: rgb(3, 64, 1);
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    height: 90px;
+    background-color:black;
+    color: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.397);
+}
+#logo{
+    border-radius: 100%;
+    width: 130px;
+    height: 70px;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+}
+#titulo{
+    text-align: center;
+    width: 100%;
+}
+h2{
+    margin-bottom: 20px;
+}
+main{
+    background-color: #dedfc5;
+    height: 100%;
+    width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.178), -8px -8px 8px rgba(255, 255, 255, 0.116), inset 5px 5px 8px rgba(255, 255, 255, 0.322);
+    padding: 30px;
+    height: 60%;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    border-radius: 20px;
+}
+.painel{
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    font-size: 25px;
+
+}
+h3{
+    margin-bottom: 20px;
+}
+#perfil{
+    border-radius: 100%;
+    width: 100px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.349), -3px -3px 5px rgba(255, 255, 255, 0.418);
+}
+#inf{
+    margin-top: 10px;
+}
+.main2{
+    height: 800px;
+}
+footer{
+    background-color: #3d423c;
+    position: fixed;
+    bottom: 0px;
+    height: 50px;
+    color: white;
+    font-size: 15px ;
+    z-index: 1;
+}
+#botao {
+    width: 100px;
+    height: 30px;
+    margin-top: 32px;
+    background: linear-gradient(to right, rgb(46, 158, 18), rgb(46, 158, 18));
+}
+button:hover {
+    transform: scale(1.1);
+}
+#fot{
+    text-align: center;
+    width: 100vw ;
+}
+
+@media screen and (max-width:600px) {
+    #logo{
+        border-radius: 100%;
+        width: 70px;
+        height: 70px;
+        margin-top: 10px;
+        margin-left: 10px;
+        position: absolute;
+        display: none;
+    }
+    main{
+        background-color: #dedfc5;
+        height: 110%;
+        width: 250px;
+        margin: auto;
+        margin-top: 50px;
+        padding: 10px;
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.178), -8px -8px 8px rgba(255, 255, 255, 0.116), inset 5px 5px 8px rgba(255, 255, 255, 0.322);
+        padding: 30px;
+        height: 60%;
+        padding-bottom: 50px;
+        padding-top: 20px;
+        border-radius: 20px;
+    }
+    .painel{
+        height: 90%;
+        width: 250px;        text-align: center;
+        z-index: 2;
+        font-size: 18px;
+    
+    }
+    header{
+        display: flex;
+        height: 110px;
+        background-color: #3d423c;
+        color: white;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.397);
+    }
+    footer{
+        background-color: #3d423c;
+        position: fixed;
+        bottom: 0px;
+        height: 60px;
+        color: white;
+        font-size: 15px ;
+        z-index: 1;
+        font-size: 12px;
+    }
+}
