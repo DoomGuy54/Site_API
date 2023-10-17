@@ -1,93 +1,19 @@
-/* Estilização da página */
-
-*{
-    margin:0%;
-    box-sizing: border-box;
-}
-body{
-    background-color: rgb(3, 64, 1);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-}
-
-header{
-    display: flex;
-    height: 20vh;
-    background-color: black;
-}
-#titulo{
-    color:#fff;
-    display: block;
-    text-align: center;
-    margin-left: 17.5%;
-    padding: 1%;
-}
-#logo{
-    height: 20vh;
-    width: 15rem;
-}
-.painel{
-    max-height: 1200px;
-    width:30%;
-    border: 0.1em;
-    background-color: #fff;
-    border-style: solid;
-    border-color: black;
-    border-radius: 10%;
-    margin: 0 auto;
-    margin-top: 2%;
-    text-align: center;
-    padding: 2%;
-    box-shadow: 2px 2px 2px rgb(0, 0, 0);
-}
-.nome{
-    margin-top: 2%;
-    margin-bottom: 3%;
-}
-img{
-    border-radius: 50%;
-    width: 30%;
-    border-color: black;
-    border:0.1em;
-    border-style: solid;
-    margin-bottom:1% ;
-}
-.bot{
-    display: flex;
-    justify-content: center;
-    margin-top: 2%;
-    margin-bottom: 5%;
-}
-footer{
-
-    text-align: center;
-    margin-top: 5.5%;
-    background-color: black;
-    color:#fff;
-    height:20vh;
-    width: 100%;
-    padding: 1%;
-}
-#inf{
-    margin-bottom: 3%;
-    margin-top: 5%;
-}
-h3{
-    color: black;
-}
-#botao{
-    border: none;
-    background: linear-gradient(to right, rgb(46, 158, 18), rgb(46, 158, 18));
-    color: #fff;
-    padding: 1% 3%;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: all ease 400ms;
-}
-button:hover {
-    transform: scale(1.1);
-}
-
 /* Responsividade */
+@media(max-width: 1045px){
+    #titulo {
+        margin-left: 12%;
+    }
+    #logo {
+        width: 20%;
+        height: 15vh;
+        margin: 2% 0;
+    }
+
+    .painel {
+        width: 50%;
+    }
+
+}
 
 @media (max-width: 768px) {
     header {
@@ -107,52 +33,16 @@ button:hover {
     }
 
     .painel {
-        width: 60%;
+        width: 90%;
     }
 
     img {
-        width: 50%;
+        width: 30%;
     }
 
     #botao {
         padding: 1% 2%;
-        height: 10vh;
-        width: 20%;
+        height: 15vh;
+        width: 40%;
     }
 }
-
-@media (max-width: 530px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-    }
-
-    #titulo {
-        margin-left: 0;
-    }
-
-    #logo {
-        width: 90%;
-        height: auto;
-        margin: 2% 0;
-    }
-
-    .painel {
-        width: 100%;
-        padding: 5%;
-    }
-
-    img {
-        width: 70%;
-    }
-    #botao{
-        height: 10vh;
-        width: 22%;
-    }
-
-    .bot {
-        margin: 10% 0;
-    }
-}
-
